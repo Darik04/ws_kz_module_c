@@ -20,7 +20,7 @@ use App\Http\Helpers\MyAPIHelper;
 
 class WrapperController extends Controller
 {
-    private $url = 'http://localhost:4043/api';
+    private $url = 'http://localhost:4043';
     public function createConversation(Request $request){
         $validator = Validator::make($request->all(), [
             'prompt' => 'required'
